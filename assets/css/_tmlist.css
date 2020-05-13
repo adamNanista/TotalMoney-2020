@@ -1,0 +1,204 @@
+
+/* general */
+
+.tm__list__anchor {
+	display: block;
+	overflow: hidden;
+}
+.tm__list__badge, 
+.tm__list__icon, 
+.tm__list__number, 
+.tm__list__decor {
+	float: left;
+}
+.tm__list__title {
+	overflow: hidden;
+}
+.tm__list__badge + .tm__list__title {
+	padding-left: 8px;
+}
+.tm__list__icon + .tm__list__title, 
+.tm__list__number + .tm__list__title, 
+.tm__list__decor + .tm__list__title {
+	padding-left: 12px;
+}
+
+/* spacing */
+
+.tm__list--icons .tm__list__item {
+	padding-bottom: 24px;
+	padding-top: 24px;
+}
+.tm__list--numbers .tm__list__item + .tm__list__item, 
+.tm__list--news .tm__list__item + .tm__list__item {
+	margin-top: 32px;
+}
+.tm__list--articles .tm__list__item + .tm__list__item, 
+.tm__list--badges .tm__list__item + .tm__list__item {
+	margin-top: 24px;
+}
+.tm__list--links .tm__list__item + .tm__list__item {
+	margin-top: 8px;
+}
+
+/* types */
+
+.tm__list--tip .tm__list__item {
+	border-bottom: 2px dashed rgba(44, 62, 80, 0.2);
+	border-top: 2px dashed rgba(44, 62, 80, 0.2);
+}
+
+/* heading */
+
+.tm__list__heading i {
+	margin-right: 4px;
+	width: 12px;
+	
+	text-align: center;
+}
+
+/* text */
+
+.tm__list__description {
+	margin-top: 4px;
+}
+.tm__list__intro, 
+.tm__list__publishing {
+	margin-top: 16px;
+}
+.tm__list__publishing span {
+	margin-right: 16px;
+}
+
+/* decor */
+
+.tm__list__decor {
+	width: 41%;
+}
+.tm__list__decor__img {
+	display: block;
+	height: auto;
+	width: 100%;
+	
+	border-radius: 4px;
+}
+
+/* number */
+
+.tm__list__number {
+	height: 48px;
+	position: relative;
+	width: 48px;
+	
+	font-size: 27px;
+	font-weight: 900;
+	line-height: 48px;
+	text-align: center;
+}
+.tm__list__number:after {
+	bottom: 0;
+	content: " ";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 4px;
+	
+	background: rgba(44, 62, 80, 0.2);
+	border-radius: 3px 0 0 3px;
+}
+
+/* badge */
+
+.tm__list__badge {
+	height: 24px;
+	width: 24px;
+}
+.tm__list__badge--pozicky {
+	background: url(../images/badges/pozicky.svg) no-repeat center;
+}
+.tm__list__badge--hypoteky {
+	background: url(../images/badges/hypoteky.svg) no-repeat center;
+}
+.tm__list__badge--sporenie {
+	background: url(../images/badges/sporenie.svg) no-repeat center;
+}
+.tm__list__badge--pzp {
+	background: url(../images/badges/pzp.svg) no-repeat center;
+}
+.tm__list__badge--cestovne-poistenie {
+	background: url(../images/badges/cestovne-poistenie.svg) no-repeat center;
+}
+.tm__list__badge--zdravotne-poistenie {
+	background: url(../images/badges/zdravotne-poistenie.svg) no-repeat center;
+}
+.tm__list__badge--havarijne-poistenie {
+	background: url(../images/badges/havarijne-poistenie.svg) no-repeat center;
+}
+.tm__list__badge--poistenie-nehnutelnosti {
+	background: url(../images/badges/poistenie-nehnutelnosti.svg) no-repeat center;
+}
+.tm__list__badge--poistenie-do-hor {
+	background: url(../images/badges/poistenie-do-hor.svg) no-repeat center;
+}
+
+/* icon */
+
+.tm__list__icon {
+	height: 48px;
+	width: 48px;
+	
+	border-radius: 50%;
+}
+.tm__list__icon--pozicky {
+	background: #71bfff url(../images/icons/pozicky.svg) no-repeat center;
+}
+.tm__list__icon--hypoteky {
+	background: #6dce68 url(../images/icons/hypoteky.svg) no-repeat center;
+}
+.tm__list__icon--sporenie {
+	background: #feaf6e url(../images/icons/sporenie.svg) no-repeat center;
+}
+.tm__list__icon--pzp {
+	background: #fd7cc3 url(../images/icons/pzp.svg) no-repeat center;
+}
+.tm__list__icon--cestovne-poistenie {
+	background: #848aff url(../images/icons/cestovne-poistenie.svg) no-repeat center;
+}
+.tm__list__icon--zdravotne-poistenie {
+	background: #60d2cc url(../images/icons/zdravotne-poistenie.svg) no-repeat center;
+}
+
+/* button */
+
+.tm__list__button {
+	display: inline-block;
+	margin-top: 16px;
+	padding: 8px 16px;
+	vertical-align: top;
+	
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 900;
+	line-height: 20px;
+	
+	border-radius: 99999px;
+}
+.tm__list__button--pozicky {
+	background: #71bfff;
+}
+.tm__list__button--hypoteky {
+	background: #6dce68;
+}
+.tm__list__button--sporenie {
+	background: #feaf6e;
+}
+.tm__list__button--pzp {
+	background: #fd7cc3;
+}
+.tm__list__button--cestovne-poistenie {
+	background: #848aff;
+}
+.tm__list__button--zdravotne-poistenie {
+	background: #60d2cc;
+}

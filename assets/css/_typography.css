@@ -1,0 +1,84 @@
+body {
+	font-family: 'Exo 2', sans-serif;
+}
+h1,
+.h1--like {
+	font-size: 27px;
+	font-weight: 900;
+	line-height: 35px;
+}
+h2, 
+.h2--like {
+	font-size: 20px;
+	font-weight: 900;
+	line-height: 27px;
+}
+h3, 
+.h3--like {
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 24px;
+}
+h4, 
+.h4--like {
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 24px;
+}
+p {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+}
+.smaller {
+	font-size: 14px;
+	line-height: 20px;
+}
+.small {
+	font-size: 12px;
+	line-height: 18px;
+}
+strong {
+	font-weight: 900;
+}
+
+
+/* Topbar */
+
+.topbar__list__anchor {
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 22px;
+}
+.topbar__list--social .topbar__list__anchor {
+	font-size: 20px;
+}
+
+/* Navigation */
+
+.nav__list__anchor {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+
+/* Footer */
+
+.footer__list__anchor {
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 22px;
+}
+.footer__menu .footer__list__item:first-of-type .footer__list__anchor {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 900;
+}
+.footer__list--social .footer__list__anchor {
+	font-size: 20px;
+}
+.footer__text a {
+	color: #ffffff;
+	font-weight: 900;
+}

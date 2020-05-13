@@ -1,0 +1,9 @@
+.trn {
+	-webkit-transition: all 0.23s ease-out;
+	-moz-transition: all 0.23s ease-out;
+	-o-transition: all 0.23s ease-out;
+	transition: all 0.23s ease-out;
+}
+.hidden {
+	display: none;
+}
