@@ -8,7 +8,7 @@
 	margin-top: 32px;
 }
 .tm__col__list {
-	margin-top: 24px;
+	margin-top: 32px;
 }
 
 /* Header */
@@ -24,9 +24,12 @@
 	position: relative;
 	z-index: 1;
 }
-.header__logo .tm__col {
-	padding-bottom: 16px;
-	padding-top: 16px;
+
+@media screen and (min-width: 600px) {
+	.header__logo .tm__col {
+		padding-bottom: 24px;
+		padding-top: 24px;
+	}
 }
 
 /* Header Menu */
@@ -43,8 +46,13 @@
 .topbar {
 	padding-bottom: 8px;
 	padding-top: 8px;
-
 	position: relative;
+	
+	color: #7f8c8d;
+}
+.topbar .tm__col {
+	padding-bottom: 8px;
+	padding-top: 8px;
 }
 .topbar__list--social {
 	font-size: 0;
@@ -68,10 +76,27 @@
 	margin-right: 4px;
 }
 
+@media screen and (min-width: 600px) {
+	.topbar {
+		padding-bottom: 12px;
+		padding-top: 12px;
+	}
+	.topbar .tm__col {
+		padding-bottom: 12px;
+		padding-top: 12px;
+	}
+}
+
 /* Navigation */
 
 .nav {
 	position: relative;
+	
+	color: #2c3e50;
+}
+.nav .tm__col {
+	padding-bottom: 8px;
+	padding-top: 8px;
 }
 .nav__list__anchor {
 	display: inline-block;
@@ -88,10 +113,22 @@
 
 .hero {
 	text-align: center;
+	
+	color: #7f8c8d;
 }
 .hero .tm__col {
 	padding-bottom: 32px;
 	padding-top: 32px;
+}
+.hero .tm__col__heading {
+	color: #2c3e50;
+}
+
+@media screen and (min-width: 600px) {
+	.hero .tm__col {
+		padding-bottom: 48px;
+		padding-top: 48px;
+	}
 }
 
 /* Products */
@@ -116,6 +153,8 @@
 .content {
 	padding-bottom: 24px;
 	padding-top: 24px;
+	
+	color: #7f8c8d;
 }
 .content .tm__col {
 	padding-bottom: 24px;
@@ -123,6 +162,11 @@
 }
 .content .totaltip {
 	margin-bottom: 32px;
+}
+.content .tm__col__heading, 
+.content .tm__list__heading, 
+.content .tm__list__number {
+	color: #2c3e50;
 }
 
 /* News */
@@ -137,7 +181,7 @@
 	margin-top: 32px;
 }
 .category .tm__list--icons {
-	margin-top: 32px;
+	margin-top: 24px;
 }
 .category .tm__list--numbers {
 	margin-top: 32px;
@@ -153,15 +197,25 @@
 .category .tm__decor__scroller {
 	margin-top: 24px;
 }
+.category .tm__col__button {
+	margin-top: 32px;
+}
 .category .tm__col__heading:not(:first-child) {
 	margin-top: 32px;
+}
+.category .tm__list--badges .tm__col {
+	padding: 0;
 }
 
 /* Footer */
 
 .footer {
-	padding-bottom: 24px;
-	padding-top: 24px;
+	padding-bottom: 16px;
+	padding-top: 16px;
+}
+.footer__menu .tm__col {
+	padding-bottom: 8px;
+	padding-top: 8px;
 }
 .footer__list + .footer__list {
 	margin-top: 16px;
@@ -187,4 +241,15 @@
 .footer__text:not(:first-child), 
 .footer__info .footer__list {
 	margin-top: 24px;
+}
+
+@media screen and (min-width: 600px) {
+	.footer, 
+	.footer__menu .tm__col {
+		padding-bottom: 24px;
+		padding-top: 24px;
+	}
+	.footer__list + .footer__list {
+		margin-top: 24px;
+	}
 }

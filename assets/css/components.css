@@ -6,6 +6,22 @@
 .tm__col__list li + li {
 	margin-top: 8px;
 }
+.tm__col__button {
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: top;
+	
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 900;
+	line-height: 20px;
+	
+	background: #025193;
+	border-radius: 99999px;
+}
+.tm__col__button--sporenie {
+	background: #feaf6e;
+}
 
 /* Branding */
 
@@ -17,6 +33,12 @@
 	height: auto;
 	max-width: 172px;
 	width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+	.branding__img {
+		max-width: 192px;
+	}
 }
 
 /* Menu trigger */
@@ -35,6 +57,7 @@
 	display: block;
 	height: 3px;
 	left: 8px;
+	opacity: 1;
 	position: absolute;
 	right: 8px;
 
@@ -53,6 +76,57 @@
 	top: 20px;
 
 	border-radius: 0 0 2px 2px;
+}
+.header__menu__trigger.open span {
+	border-radius: 2px;
+}
+.header__menu__trigger.open span:nth-child(1), 
+.header__menu__trigger.open span:nth-child(4) {
+	opacity: 0;
+	top: 14px;
+}
+.header__menu__trigger.open span:nth-child(2) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.header__menu__trigger.open span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 600px) {
+	.header__menu__trigger {
+		height: 56px;
+		margin-top: -28px;
+		padding: 12px;
+		right: 12px;
+		width: 56px;
+	}
+	.header__menu__trigger span {
+		height: 4px;
+		left: 12px;
+		right: 12px;
+	}
+	.header__menu__trigger span:nth-child(1) {
+		top: 19px;
+	}
+	.header__menu__trigger span:nth-child(2),
+	.header__menu__trigger span:nth-child(3) {
+		top: 26px;
+	}
+	.header__menu__trigger span:nth-child(4) {
+		top: 33px;
+	}
+	.header__menu__trigger.open span:nth-child(1), 
+	.header__menu__trigger.open span:nth-child(4) {
+		top: 26px;
+	}
 }
 
 /* Topbar button */
@@ -208,8 +282,13 @@
 
 	border-top: 1px solid rgba(44, 62, 80, 0.2);
 }
+.totaltip__heading {
+	color: #2c3e50;
+}
 .totaltip__description {
 	margin-top: 12px;
+	
+	color: #7f8c8d;
 }
 .totaltip__button {
 	display: inline-block;

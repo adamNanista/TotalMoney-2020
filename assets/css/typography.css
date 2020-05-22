@@ -42,6 +42,14 @@ strong {
 	font-weight: 900;
 }
 
+@media screen and (min-width: 600px) {
+	h1,
+	.h1--like {
+		font-size: 32px;
+		font-weight: 900;
+		line-height: 40px;
+	}
+}
 
 /* Topbar */
 

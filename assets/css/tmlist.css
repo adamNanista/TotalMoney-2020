@@ -33,12 +33,21 @@
 .tm__list--news .tm__list__item + .tm__list__item {
 	margin-top: 32px;
 }
-.tm__list--articles .tm__list__item + .tm__list__item, 
-.tm__list--badges .tm__list__item + .tm__list__item {
+.tm__list--articles .tm__list__item + .tm__list__item {
 	margin-top: 24px;
+}
+.tm__list--badges .tm__list__item {
+	margin-bottom: 24px;
 }
 .tm__list--links .tm__list__item + .tm__list__item {
 	margin-top: 8px;
+}
+
+@media screen and (min-width: 600px) {
+	.tm__list--icons .tm__list__item {
+		padding-bottom: 32px;
+		padding-top: 32px;
+	}
 }
 
 /* types */
@@ -46,6 +55,13 @@
 .tm__list--tip .tm__list__item {
 	border-bottom: 2px dashed rgba(44, 62, 80, 0.2);
 	border-top: 2px dashed rgba(44, 62, 80, 0.2);
+}
+
+@media screen and (min-width: 600px) {
+	.tm__list--tip .tm__list__item {
+		border-bottom: 4px dashed rgba(44, 62, 80, 0.2);
+		border-top: 4px dashed rgba(44, 62, 80, 0.2);
+	}
 }
 
 /* heading */

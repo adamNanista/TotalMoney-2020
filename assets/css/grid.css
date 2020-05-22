@@ -1,19 +1,24 @@
 .tm__row {
-	padding-left: 8px;
-	padding-right: 8px;
-}
-.tm__row:after {
-	content: " ";
-	visibility: hidden;
-	display: block;
-	height: 0;
-	clear: both;
+	font-size: 0;
 }
 .tm__col {
-	float: left;
-	padding: 8px;
+	display: inline-block;
+	padding: 16px;
+	vertical-align: top;
 	width: 100%;
 }
-.tm__col--s1 {
+.tm__col--s1-2 {
 	width: 50%;
+}
+
+@media screen and (min-width: 600px) {
+	.tm__col {
+		padding: 24px;
+	}
+	.tm__col--m1-2 {
+		width: 50%;
+	}
+	.tm__col--m1-3 {
+		width: 33.33333%;
+	}
 }
