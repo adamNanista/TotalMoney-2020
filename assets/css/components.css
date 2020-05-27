@@ -27,17 +27,26 @@
 
 .branding {
 	display: block;
+	padding: 16px;
+	width: 204px;
 }
 .branding__img {
 	display: block;
 	height: auto;
-	max-width: 172px;
 	width: 100%;
 }
 
 @media screen and (min-width: 600px) {
-	.branding__img {
-		max-width: 192px;
+	.branding {
+		padding: 24px;
+		width: 240px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.branding {
+		padding: 32px;
+		width: 320px;
 	}
 }
 
@@ -153,6 +162,18 @@
 	margin-left: 8px;
 }
 
+@media screen and (min-width: 600px) {
+	.topbar__button {
+		padding: 12px 24px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.topbar__button {
+		padding: 12px 32px;
+	}
+}
+
 /* Overlay */
 
 .overlay {
@@ -239,7 +260,7 @@
 	border-radius: 4px;
 }
 .totaltip__header {
-	min-height: 48px;
+	min-height: 52px;
 	padding: 16px;
 	position: relative;
 }
@@ -261,9 +282,10 @@
 }
 
 
+
 .totaltip__claim {
 	display: inline-block;
-	padding: 0 2px;
+	padding: 2px 4px;
 	position: absolute;
 	right: 16px;
 	top: 16px;
@@ -306,4 +328,28 @@
 }
 .totaltip--pabk .totaltip__button {
 	background: #FF4D00;
+}
+
+@media screen and (min-width: 1280px) {
+	.totaltip {
+		padding-bottom: 24px;
+	}
+	.totaltip__header {
+		min-height: 68px;
+		padding: 24px;
+	}
+	.totaltip__claim {
+		right: 24px;
+		top: 24px;
+	}
+	.totaltip__content {
+		padding: 24px 24px 0;
+	}
+	.totaltip__button {
+		margin-top: 20px;
+		padding: 9px 24px;
+		
+		font-size: 16px;
+		line-height: 24px;
+	}
 }

@@ -23,6 +23,17 @@
 	padding-left: 12px;
 }
 
+@media screen and (min-width: 1280px) {
+	.tm__list__badge + .tm__list__title {
+		padding-left: 12px;
+	}
+	.tm__list__icon + .tm__list__title, 
+	.tm__list__number + .tm__list__title, 
+	.tm__list__decor + .tm__list__title {
+		padding-left: 16px;
+	}
+}
+
 /* spacing */
 
 .tm__list--icons .tm__list__item {
@@ -47,6 +58,12 @@
 	.tm__list--icons .tm__list__item {
 		padding-bottom: 32px;
 		padding-top: 32px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.tm__list--links .tm__list__item + .tm__list__item {
+		margin-top: 12px;
 	}
 }
 
@@ -89,7 +106,7 @@
 /* decor */
 
 .tm__list__decor {
-	width: 41%;
+	width: 49%;
 }
 .tm__list__decor__img {
 	display: block;
@@ -97,6 +114,12 @@
 	width: 100%;
 	
 	border-radius: 4px;
+}
+
+@media screen and (min-width: 600px) {
+	.tm__list__decor {
+		width: 35%;
+	}
 }
 
 /* number */
@@ -122,6 +145,21 @@
 	
 	background: rgba(44, 62, 80, 0.2);
 	border-radius: 3px 0 0 3px;
+}
+
+@media screen and (min-width: 1280px) {
+	.tm__list__number {
+		height: 64px;
+		width: 64px;
+		
+		font-size: 39px;
+		line-height: 64px;
+	}
+	.tm__list__number:after {
+		width: 6px;
+		
+		border-radius: 4px 0 0 4px;
+	}
 }
 
 /* badge */
@@ -158,6 +196,17 @@
 	background: url(../images/badges/poistenie-do-hor.svg) no-repeat center;
 }
 
+@media screen and (min-width: 1280px) {
+	.tm__list__badge {
+		height: 32px;
+		width: 32px;
+		
+		-webkit-background-size: 32px;
+		-moz-background-size: 32px;
+		background-size: 32px;
+	}
+}
+
 /* icon */
 
 .tm__list__icon {
@@ -183,6 +232,26 @@
 }
 .tm__list__icon--zdravotne-poistenie {
 	background: #60d2cc url(../images/icons/zdravotne-poistenie.svg) no-repeat center;
+}
+.tm__list__icon--kreditne-karty {
+	background: #a7d96a url(../images/icons/kreditne-karty.svg) no-repeat center;
+}
+.tm__list__icon--bezne-ucty {
+	background: #ff8187 url(../images/icons/bezne-ucty.svg) no-repeat center;
+}
+.tm__list__icon--energie {
+	background: #f286f7 url(../images/icons/energie.svg) no-repeat center;
+}
+
+@media screen and (min-width: 1280px) {
+	.tm__list__icon {
+		height: 64px;
+		width: 64px;
+		
+		-webkit-background-size: 56px;
+		-moz-background-size: 56px;
+		background-size: 56px;
+	}
 }
 
 /* button */
@@ -217,4 +286,23 @@
 }
 .tm__list__button--zdravotne-poistenie {
 	background: #60d2cc;
+}
+.tm__list__button--kreditne-karty {
+	background: #a7d96a;
+}
+.tm__list__button--bezne-ucty {
+	background: #ff8187;
+}
+.tm__list__button--energie {
+	background: #f286f7;
+}
+
+@media screen and (min-width: 1280px) {
+	.tm__list__button {
+		margin-top: 20px;
+		padding: 9px 24px;
+		
+		font-size: 16px;
+		line-height: 24px;
+	}
 }

@@ -22,3 +22,18 @@
 		width: 33.33333%;
 	}
 }
+
+@media screen and (min-width: 1024px) {
+	.tm__col--l1-3 {
+		width: 33.33333%;
+	}
+	.tm__col--l2-3 {
+		width: 66.66667%;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.tm__col {
+		padding: 32px;
+	}
+}

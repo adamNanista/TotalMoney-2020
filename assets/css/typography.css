@@ -11,7 +11,7 @@ h2,
 .h2--like {
 	font-size: 20px;
 	font-weight: 900;
-	line-height: 27px;
+	line-height: 30px;
 }
 h3, 
 .h3--like {
@@ -46,29 +46,39 @@ strong {
 	h1,
 	.h1--like {
 		font-size: 32px;
-		font-weight: 900;
 		line-height: 40px;
 	}
 }
 
-/* Topbar */
-
-.topbar__list__anchor {
-	font-size: 12px;
-	font-weight: 500;
-	line-height: 22px;
-}
-.topbar__list--social .topbar__list__anchor {
-	font-size: 20px;
-}
-
-/* Navigation */
-
-.nav__list__anchor {
-	font-size: 14px;
-	font-weight: 500;
-	line-height: 22px;
-	text-transform: uppercase;
+@media screen and (min-width: 1280px) {
+	h1,
+	.h1--like {
+		font-size: 39px;
+		line-height: 50px;
+	}
+	h2, 
+	.h2--like {
+		font-size: 25px;
+		line-height: 36px;
+	}
+	h3, 
+	.h3--like {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	h4, 
+	.h4--like {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	p {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.smaller {
+		font-size: 16px;
+		line-height: 24px;
+	}
 }
 
 /* Footer */
@@ -89,4 +99,17 @@ strong {
 .footer__text a {
 	color: #ffffff;
 	font-weight: 900;
+}
+
+@media screen and (min-width: 1280px) {
+	.footer__list__anchor {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.footer__menu .footer__list__item:first-of-type .footer__list__anchor {
+		font-size: 16px;
+	}
+	.footer__list--social .footer__list__anchor {
+		font-size: 25px;
+	}
 }
