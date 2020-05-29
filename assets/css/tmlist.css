@@ -242,6 +242,24 @@
 .tm__list__icon--energie {
 	background: #f286f7 url(../images/icons/energie.svg) no-repeat center;
 }
+.tm__list__icon--poistenie-nehnutelnosti {
+	background: #62d5f2 url(../images/icons/poistenie-nehnutelnosti.svg) no-repeat center;
+}
+.tm__list__icon--havarijne-poistenie {
+	background: #da85ff url(../images/icons/havarijne-poistenie.svg) no-repeat center;
+}
+.tm__list__icon--poistenie-do-hor {
+	background: #65c49b url(../images/icons/poistenie-do-hor.svg) no-repeat center;
+}
+.tm__list__icon--stavebne-sporenie {
+	background: #87cd69 url(../images/icons/stavebne-sporenie.svg) no-repeat center;
+}
+.tm__list__icon--zivotne-poistenie {
+	background: #ef856a url(../images/icons/zivotne-poistenie.svg) no-repeat center;
+}
+.tm__list__icon--poistenie-zodpovednosti-zamestnanca {
+	background: #70a7ff url(../images/icons/poistenie-zodpovednosti-zamestnanca.svg) no-repeat center;
+}
 
 @media screen and (min-width: 1280px) {
 	.tm__list__icon {
@@ -295,6 +313,24 @@
 }
 .tm__list__button--energie {
 	background: #f286f7;
+}
+.tm__list__button--poistenie-nehnutelnosti {
+	background: #62d5f2;
+}
+.tm__list__button--havarijne-poistenie {
+	background: #da85ff;
+}
+.tm__list__button--poistenie-do-hor {
+	background: #65c49b;
+}
+.tm__list__button--stavebne-sporenie {
+	background: #87cd69;
+}
+.tm__list__button--zivotne-poistenie {
+	background: #ef856a;
+}
+.tm__list__button--poistenie-zodpovednosti-zamestnanca {
+	background: #70a7ff;
 }
 
 @media screen and (min-width: 1280px) {

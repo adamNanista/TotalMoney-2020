@@ -2,7 +2,7 @@
 /* Header */
 
 .header {
-	border-bottom: 1px solid #ecf0f1;
+	border-bottom: 1px solid rgba(44, 62, 80, 0.2);
 }
 
 /* Logo */
@@ -23,7 +23,10 @@
 	background: #ffffff;
 }
 .nav__list__item + .nav__list__item {
-	border-top: 1px solid #ecf0f1;
+	border-top: 1px solid rgba(44, 62, 80, 0.2);
+}
+.nav__list__item .nav__list {
+	background: #ecf0f1;
 }
 
 @media screen and (min-width: 1280px) {
