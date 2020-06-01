@@ -303,9 +303,27 @@
 /* Hero */
 
 .hero {
-	text-align: center;
+	padding-bottom: 28.6%; /* priestor pre obrazok */
+	position: relative;
 	
 	color: #7f8c8d;
+	text-align: center;
+}
+.hero__decor {
+	bottom: -1px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+}
+.hero__decor__img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+.hero__decor__img--tablet, 
+.hero__decor__img--desktop {
+	display: none;
 }
 .hero .tm__col {
 	padding-bottom: 32px;
@@ -315,14 +333,59 @@
 	color: #2c3e50;
 }
 
+@media screen and (max-width: 839px) and (orientation: landscape) {
+	.hero {
+		padding-bottom: 0;
+	}
+	.hero__decor {
+		display: none;
+	}
+}
+
 @media screen and (min-width: 600px) {
+	.hero {
+		padding-bottom: 18.3%;
+	}
+	.hero__decor__img--mobile {
+		display: none;
+	}
+	.hero__decor__img--tablet {
+		display: block;
+	}
 	.hero .tm__col {
 		padding-bottom: 48px;
 		padding-top: 48px;
 	}
 }
 
+@media screen and (min-width: 600px) and (max-width: 839px) and (orientation: landscape) {
+	.hero .tm__col {
+		padding-bottom: 32px;
+		padding-top: 32px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.hero {
+		padding-bottom: 11%;
+	}
+	.hero__decor__img--tablet {
+		display: none;
+	}
+	.hero__decor__img--desktop {
+		display: block;
+	}
+}
+
 @media screen and (min-width: 1280px) {
+	.hero {
+		padding-bottom: 140px;
+	}
+	.hero__decor {
+		left: 50%;
+		margin-left: -600px;
+		max-width: 1200px;
+	}
 	.hero .tm__row {
 		margin: auto;
 		max-width: 1200px;
