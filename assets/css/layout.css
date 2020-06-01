@@ -333,7 +333,7 @@
 	color: #2c3e50;
 }
 
-@media screen and (max-width: 839px) and (orientation: landscape) {
+@media screen and (max-width:839px) and (orientation:landscape) {
 	.hero {
 		padding-bottom: 0;
 	}
@@ -358,10 +358,13 @@
 	}
 }
 
-@media screen and (min-width: 600px) and (max-width: 839px) and (orientation: landscape) {
+@media screen and (min-width:600px) and (max-width:839px) and (orientation:landscape) {
 	.hero .tm__col {
 		padding-bottom: 32px;
 		padding-top: 32px;
+	}
+	.hero__decor {
+		display: none;
 	}
 }
 
