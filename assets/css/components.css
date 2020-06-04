@@ -23,6 +23,18 @@
 	background: #feaf6e;
 }
 
+@media screen and (min-width: 1280px) {
+	.tm__col__list li + li {
+		margin-top: 12px;
+	}
+	.tm__col__button {
+		padding: 9px 24px;
+		
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
 /* Branding */
 
 .branding {
@@ -162,6 +174,10 @@
 	margin-left: 8px;
 }
 
+.topbar__button:hover {
+	background: #212e3c;
+}
+
 @media screen and (min-width: 600px) {
 	.topbar__button {
 		padding: 12px 24px;
@@ -199,6 +215,10 @@
 	line-height: 20px;
 
 	background: url(../images/load-more.svg) no-repeat center top;
+}
+
+.load-more__button:hover {
+	color: #95a5a6;
 }
 
 @media screen and (min-width: 600px) {

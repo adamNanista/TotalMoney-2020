@@ -54,6 +54,15 @@
 	margin-top: 8px;
 }
 
+.tm__list--icons .tm__list__item.products__item:hover {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 8px;
+}
+.tm__list--articles .tm__list__item:hover .tm__list__heading, 
+.tm__list--badges .tm__list__item:hover .tm__list__heading {
+	color: #161f28;
+}
+
 @media screen and (min-width: 600px) {
 	.tm__list--icons .tm__list__item {
 		padding-bottom: 32px;
@@ -215,6 +224,7 @@
 	
 	border-radius: 50%;
 }
+
 .tm__list__icon--pozicky {
 	background: #71bfff url(../images/icons/pozicky.svg) no-repeat center;
 }

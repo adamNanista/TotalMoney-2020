@@ -118,6 +118,9 @@
 	font-weight: 500;
 	line-height: 22px;
 }
+.topbar__list__anchor:hover {
+	color: #5f696a;
+}
 
 .topbar__list--contact .topbar__list__item + .topbar__list__item, 
 .topbar__list--nav .topbar__list__item + .topbar__list__item {
@@ -238,6 +241,10 @@
 	transform: rotate(180deg);
 }
 
+.nav__list__anchor:hover {
+	color: #212e3c;
+}
+
 .nav__list__item .nav__list {
 	padding: 4px 16px;
 }
@@ -251,9 +258,10 @@
 @media screen and (min-width: 1280px) {
 	.nav {
 		padding: 0 32px;
+		
+		color: #7f8c8d;
 	}
 	.nav__list {
-		color: #7f8c8d;
 		font-size: 0;
 		text-align: right;
 	}
@@ -270,6 +278,16 @@
 		padding-top: 37px;
 		
 		font-size: 12px;
+	}
+	.nav__list__anchor:hover {
+		color: #5f696a;
+	}
+	.nav__list__item:hover i {
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
 	}
 	
 	.nav__list__item .nav__list {
@@ -297,6 +315,9 @@
 	.nav__list__item .nav__list .nav__list__anchor {
 		padding-bottom: 8px;
 		padding-top: 8px;
+	}
+	.nav__list__item .nav__list .nav__list__anchor:hover {
+		padding-left: 8px;
 	}
 }
 
